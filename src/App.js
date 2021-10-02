@@ -2,7 +2,7 @@ import {
   BrowserRouter as Router, Route, Switch
 } from "react-router-dom";
 import './App.css';
-import Header from './components/Header/Header';
+import Header from "./components/Header/Header";
 import Inventory from "./components/Inventory/Inventory";
 import NotFound from "./components/NotFound/NotFound";
 import OrderReview from "./components/OrderReview/OrderReview";
@@ -12,8 +12,9 @@ function App() {
   return (
     <div>
 
-      <Header></Header>
+      
       <Router>
+      <Header></Header>
         <Switch>
           <Route exact path="/">
             <Shop></Shop>
